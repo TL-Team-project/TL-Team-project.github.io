@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="it">
+    <head>
+      <meta charset="utf-8">
+        <!-- Viewport -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+      <title>Mos Eisley Cantina</title>
+      <meta name="description" content="Mos Eisley Cantina offical page. All the fun minus the scum and villany">
+      <meta name="author" content="Trandoshans associates">
+        <!-- CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/carousel.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Barra di navigazione -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              
+              <!-- header della navbar -->
+              <div class="navbar-header">
+                  <!-- Pulsante per device mobile -->
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <!-- Lineete-->
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+                 <!-- Logo o il nome del sito -->
+                 <a class="navbar-brand" href="index.html"> Mos Eisley Cantina</a>
+             </div>    
+             
+             <!--Inizia la parte che viene fata collassare su device mobile -->
+             <div class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                     <!-- Link semplice-->
+                     <li><a href="#"> where</a></li>
+                     <!-- Link dropdown -->
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Services <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">The places</a></li>
+                            <li><a href="#">The staff</a></li>
+                            <li><a href="#">Live music</a></li>
+                            <!-- Divisore -->
+                            <li class="divider"></li>
+                            <li><a href="#">Work with us</a></li>
+                            <li><a href="#">Test: are you force-sensitive?</a></li>
+                         </ul>
+                     </li>
+                     
+                     <!-- Un secondo menu dropdown-->
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                           Menu <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" role="menu">
+                             <li><a href="#">Menù <em>Solo shot first</em></a></li>
+                             <li><a href="#">Menù <em>Greedo</em></a></li>
+                             <li class="divider"></li>
+                             <li><a href="#">Vegan menù <em>Blue Milk run</em></a></li>
+                             <li><a href="#">Vegan menù <em>Whole lotta sand</em></a></li>
+                             <li class="divider"></li>
+                             <li><a href="#">S. Valentine special <em>Palpatine</em></a></li>
+                             <li><a href="#">New Year's eve special <em>Exactly like Alderaan</em></a></li>
+                         </ul>
+                     </li>                 
+                 </ul>
+                 
+                 <!-- La zona a destra -->
+                 <ul class="nav navbar-nav navbar-right">
+                   <form class="navbar-form navbar-left" role="search">
+                       <!-- campo compilabile-->
+                       <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Looking for something?">
+                       </div>
+                       <!-- Pulsante di ricerca -->
+                       <button type="submit" class="btn btn-default">Search</button>
+                   </form>
+                 </ul>
+             </div>
+          </div>
+        </nav> <!-- ./ fine nav-bar-->
+        
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Live music</li>
+                <li><a href="#">Work with us</a></li>
+            </ol>
+        </div> <!-- ./breadcrumps -->
+        
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h1>Live music. <small>'Cause you can't hear the shootings if the music is loud enough.</small></h1>
+            </div>
+            <!-- Inseriamo una riga, il container ce già -->
+            <div class="row">
+                <!-- Inseriamo prima colonna tipo sm-7 -->
+                <div class="col-sm-7">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacus. Vivamus 
+                        egetlorem convallis, mollis felis faucibus, tempor eros. Aliquam dignissim commodo magna,
+                        in orci semper eu. Sed sit amet nibh vel eros mollis semper. Etiam magna est, mattis ut 
+                        dignissim hendrerit, placerat ac tortor. Aenean at fermentum nisl. Aliquam non consectetur
+                        augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam pulvinar consequat
+                        metus a pretium.Located on the beautiful and yet extremely unpleasant dunes of Tatooine, 
+                        the Mos Eisley Cantina is <b>a spot of bright, warm light</b>
+                        <b>between a rock and hard place - literally. Despite what you nerf ac.</b>
+                    </p>
+                </div>
+                <!--Inseriamo la seconda colonna tipo sm-5 -->
+                <div class="col-sm-5 hidden-xs">
+                    <!-- Inseriamo un panello, cioe un riquadro dotato di titolo ci sono di diversi colori: 
+                        default, primary, success, info, warning, danger -->
+                    <div class="panel panel-primary">
+                        <!-- Inseriamo il titolo del panello -->
+                        <div class="panel-heading"> 
+                            <h3 class="panel-title">Social tags - because tagging is good</h3>
+                        </div>
+                        <!-- Inseriamo il body del panello-->
+                        <div class="panel-body">
+                            <h1>Cantina</h1> <h4>Mos Eisly</h4> <h2>Iced coffee</h2> <h1>Live music</h1>
+                            <h2>Han Solo</h2> <h5>Sand, sand, sand</h5> <h3>Ellaria sand</h3>
+                            <h5>More sand</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inseriamo una nuova riga -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        Vestibulum scelerisque scelerisque diam at lacinia. Donec posuere risus libero, lacinia
+                        sollicitudin neque tincidunt et. In hac habitasse platea dictumst. Morbi id massa a erat
+                        volutpat vehicula eu sed quam. Vivamus sed diam sollicitudin, viverra dolor a, facilisis
+                        nulla. Aliquam erat volutpat. Pellentesque vel odio id urna accumsan dignissim ut sed nisl.
+                        Mauris sem ipsum, porttitor et odio in, pharetra porttitor libero.
+                       Located on the beautiful and yet extramely unpleasant dunes of Tatooine,
+                       <b>a spot of bright. Aliquam mollis risus velit ut aliquit turpis ac.</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="container">
+            <footer>
+                <!-- Inseriamo una riga -->
+                <hr class="featurette-divider">
+                <!-- Lasciamo il link #, cosi si ricarica la pagina -->
+                <p class="pull-right"><a href="#">Top</a></p>
+                <p>© 2014, Mos Eisley Cantina</p>
+            </footer>
+        </div>
+        
+          <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
