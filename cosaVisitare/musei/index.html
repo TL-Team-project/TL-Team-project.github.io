@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/stileSito.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Barra di navigazione -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <!-- header della navbar -->
+                <div class="navbar-header">
+                    <!-- Pulsante per device mobile -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <!-- Lineete-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo o il nome del sito -->
+                    <a class="navbar-brand" href="index.html"> <img src="img/logo2.jpg"> </a>
+                    <!--selettori lingua -->
+                    <button type="button" class="btn btn-default navbar-btn"><img class="bandiera" src="img/it.png"></button>
+                    <button type="button" class="btn btn-default navbar-btn"><img class="bandiera" src="img/en.png"></button>
+
+                </div>    
+
+                <!--Inizia la parte che viene fata collassare su device mobile -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Primo link dropdown-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Regione <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/storia.html">Storia</a></li>
+                                <li><a href="/storia.html">Dialetto</a></li>
+                                <li><a href="/storia.html">Clima</a></li>
+                            </ul>
+                        </li>
+                        <!-- Secondo Link dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Dove <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/dove/venezia">Venezia</a></li>
+                                <li><a href="/dove/venezia">Padova</a></li>
+                                <li><a href="/dove/venezia">Treviso</a></li>
+                                <li><a href="/dove/venezia">Verona</a></li>
+                                <li><a href="/dove/venezia">Vicenza</a></li>
+                                <li><a href="/dove/venezia">Belluno</a></li>
+                                <li><a href="/dove/venezia">Rovigo</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Terzo Link dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Cosa visitare <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/cosaVisitare/musei">Musei</a></li>
+                                <li><a href="/cosaVisitare/musei">Piazze</a></li>
+                                <li><a href="/cosaVisitare/musei">Chiese</a></li>
+                                <li><a href="/cosaVisitare/musei">Edifici storici</a></li>
+                                <li><a href="/cosaVisitare/musei">Luoghi</a></li>
+                                <li><a href="/cosaVisitare/musei">Sagre</a></li>
+                                <li><a href="/cosaVisitare/musei">Fiere</a></li>
+                                <li><a href="/cosaVisitare/musei">Mostre</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Quarto Link dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Che turista sei? <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/cheTuristaSei/solitario">Viaggiatore solitario</a></li>
+                                <li><a href="/cheTuristaSei/solitario">Con la famiglia</a></li>
+                                <li><a href="/cheTuristaSei/solitario">Studente</a></li>
+                            </ul>
+                        </li>  
+                        <!-- Link semplice-->
+
+                    </ul>
+         
+                    <!-- La zona a destra -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search">
+                            <!-- campo compilabile-->
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ricerca nel sito">
+                            </div>
+                            <!-- Pulsante di ricerca -->
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">questa pagina</li>
+            </ol>
+        </div> <!-- ./breadcrumps -->
+        
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h1>Header pagina</h1><small>sottotitolo</small>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="container">
+            <footer>
+                <!-- Inseriamo una riga -->
+                <hr class="featurette-divider">
+                <!-- Lasciamo il link #, cosi si ricarica la pagina -->
+
+                <p>
+                    © 2014 TL-Team, progetto per corso di web design
+                    <a href="sitemap.html">Mappa del sito</a> - <a href="mailto:tlteam@indirizzofinto.com">Contatti</a>
+                </p>
+            </footer>
+        </div>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
