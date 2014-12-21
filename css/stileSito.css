@@ -7,21 +7,6 @@ body{
 .carousel-caption {
     z-index: 10;
 }
-@media (max-width: 992px) {
-    .carousel-inner p {font-size: 14px; }
-    .carousel-inner h1 {font-size: 26px; }
-    .featurette {margin-top: -25px;}
-}
-@media (max-width: 768px) {
-    .carousel-inner p {font-size: 12px; }
-    .carousel-inner h1 {font-size: 22px; }
-    .featurette {margin-top: -35px;}
-}
-@media (max-width: 500px){
-    .carousel-inner p {display: none;}
-    .carousel-inner h1 {font-size: 12px;}
-    .featurette {margin-top: -40px;}
-}
 .marketing .col-sm-4 {
     text-align: center;
 } 
@@ -35,6 +20,50 @@ body{
 footer{
     text-align: center;
 }
-img.bandiera{
+
+div.bandiera{
+    display: inline;
+}
+div.bandiera img{
     height: 16px;
+    margin-top: 5px;
+}
+
+#ricerca{
+}
+#ricerca.form-control{
+    size:15em;
+}
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+@media (max-width: 767px){
+    div.bandiera img{
+        margin-top: -10px;
+    }
+    div.bandiera br{
+        display: none;
+    }
+
+}
+.navbar-left{
+    margin-left: 0px;
+    margin-right: 0px;
 }

@@ -30,9 +30,10 @@
                     <!-- Logo o il nome del sito -->
                     <a class="navbar-brand" href="index.html"> <img src="img/logo2.jpg"> </a>
                     <!--selettori lingua -->
-                    <button type="button" class="btn btn-default navbar-btn"><img class="bandiera" src="img/it.png"></button>
-                    <button type="button" class="btn btn-default navbar-btn"><img class="bandiera" src="img/en.png"></button>
-
+                    <div class="nav navbar-nav  bandiera">
+                        <a href="#"><img src="img/it.png"></a><br>
+                        <a href="#"><img src="img/en.png"></a>
+                    </div>
                 </div>    
 
                 <!--Inizia la parte che viene fata collassare su device mobile -->
@@ -95,20 +96,18 @@
                             </ul>
                         </li>  
                         <!-- Link semplice-->
-
+                        <li><a href="login.html">Login</a></li>
                     </ul>
          
                     <!-- La zona a destra -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left" role="search">
-                            <!-- campo compilabile-->
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Ricerca nel sito">
+                    <div class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search" id="ricerca">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <input type="text" class="form-control" placeholder="Ricerca nel sito.." />
                             </div>
-                            <!-- Pulsante di ricerca -->
-                            <button type="submit" class="btn btn-default">Search</button>
                         </form>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </nav>
