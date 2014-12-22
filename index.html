@@ -15,7 +15,7 @@
 
     <body>
         <!-- Barra di navigazione -->
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
               
               <!-- header della navbar -->
@@ -29,8 +29,8 @@
                  </button>
                  <!-- Logo o il nome del sito -->
                   <a class="navbar-brand" href="index.html"> <img src="img/logo2.jpg"> </a>
-                  <a class="navbar-brand" href="#"> <img src="img/it.png"></a>
-                  <a class="navbar-brand" href="#"> <img src="img/en.png"></a>
+                  <a class="navbar-brand" href="#"> <img class="img_lingua" src="img/it.png"></a>
+                  <a class="navbar-brand" href="#"> <img class="img_lingua" src="img/en.png"></a>
              </div>    
              
              <!--Inizia la parte che viene fata collassare su device mobile -->
@@ -104,7 +104,7 @@
                        <button type="submit" class="btn btn-default">Search</button>
                    </form>
                       <!-- Link semplice-->
-                     <li><a href="#">Login</a></li>
+                     <li><a href="login/">Login</a></li>
                  </ul>
              </div>
           </div>
@@ -124,7 +124,7 @@
                 <!-- Prima slide --->
                 <div class="item active">
                     <!-- inseriamo l'immagine e il testo alternativo -->
-                    <img src="img/slide1.jpg" alt="Welcome">
+                    <img src="img/venezia.jpg" alt="Welcome to Venice">
                     <!-- Inseriamo un container per inserire il testo e le discalia -->
                     <div class="container">
                         <!-- Inseriamo la didascalia --->
@@ -138,7 +138,7 @@
                 <!-- Seconda slide -->
                 <div class="item">
                     <!-- Inseriamo l'immagine -->
-                    <img src="img/slide1.jpg" alt="Second slide">
+                    <img src="img/venezia.jpg" alt="Welcome to Padova">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1> <em>La città di Padova</em> </h1> 
@@ -163,10 +163,13 @@
                   Benvenuti in Veneto, mille motivi per visitarla
                 </h1>
             </div>
-            <!-- Inseriamo una nuova riga -->
+            <!-- Inseriamo una riga -->
             <div class="row">
+                <!--Inseriamo una colonna col-sm-8-->
                 <div class="col-sm-8">
-                    <p>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
                          <strong>Venezia</strong> dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacu
                         egetlorem convallis, mollis felis faucibus, tempor eros. Aliquam dignissim commodo magna,
                         in orci semper eu. Sed sit amet nibh vel eros mollis semper. Etiam magna est, mattis ut 
@@ -178,23 +181,13 @@
                         loremin orci semper eu. Sed sit amet nibh vel eros <strong>Treviso</strong>. Etiam magna est, 
                         dignissim hendrerit, placerat ac tortor. Aenean at fermentum nisl. Aliquam non consectetur
                         lorem
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                   
-                    <h3> <p> Eventi del momento </p></h3>
-                    <p> <a href="#">Evento_1</a> giorno/mese/anno</p> 
-                    <p><a href="#">Evento_2</a> giorno/mese/anno<p/>
-                    <p><a href="#">Evento_3</a> giorno/mese/anno</p>
-                     
-                </div>
-            </div>
-            <!--Inseriamo una riga -->
-            <div class="row">
-                <!--Inseriamo una colonna tipo sm-8 -->
-                <div class="col-sm-8">
-                    <h3><p>Area notizie</p></h3>
-                    <div class="col-sm-4">
+                          </p>
+                       </div>
+                    </div>
+                    
+                    <div class="row">
+                      <h2><p>Area notizie, aprofondimenti</p></h2>
+                      <div class="col-sm-4">
                         <div class="panel panel-info">
                         <!-- Inseriamo il titolo del panello -->
                           <div class="panel-heading"> 
@@ -204,9 +197,10 @@
                           <div class="panel-body">
                              <p>scheda notizia_1</p>
                           </div>
-                       </div>
-                    </div>
-                    <div class="col-sm-4">
+                        </div>
+                      </div>  
+                        
+                      <div class="col-sm-4">
                         <div class="panel panel-info">
                         <!-- Inseriamo il titolo del panello -->
                           <div class="panel-heading"> 
@@ -217,8 +211,9 @@
                             <p>scheda notizia_2</p>
                           </div>
                        </div>
-                    </div>
-                    <div class="col-sm-4">
+                     </div>
+                        
+                     <div class="col-sm-4">
                         <div class="panel panel-info">
                         <!-- Inseriamo il titolo del panello -->
                           <div class="panel-heading"> 
@@ -229,34 +224,44 @@
                              <p>scheda notizia_3</p>
                           </div>
                        </div>
-                    </div>
-                 
-                </div>
+                     </div>
+                 </div>
+               </div> <!-- /colonna sm-8-->
                 
-                
+                <!--Inseriamo la seconda colonna col-sm-4-->
+               <div class="col-sm-4">
+                   <div class="row">
+                       <div class="col-sm-12">
+                            <h3> <p> Eventi del momento </p></h3>
+                            <p> <a href="#">Evento_1</a> giorno/mese/anno</p> 
+                            <p><a href="#">Evento_2</a> giorno/mese/anno<p/>
+                            <p><a href="#">Evento_3</a> giorno/mese/anno</p>
+                            <br>
+                       </div>
+                   </div>
+                   
+                   <div class="row">
+                       <div class="col-sm-12">
+                           <div class="panel panel-primary">
+                            <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Tag cloud</h3>
+                            </div>
+                             <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <h1><a href="dove/venezia/"> Venezia </a></h1><h2><a href="#">Verona</a></h2> 
+                               <h1><a href="#">Padova</a></h1> <h2><a href="#">Chiesa si Sant'Antonio</a></h2>
+                               <h5><a href="#">Arena</a></h5>
+                             </div>
+                         </div>
+                       </div>
+                   </div>                   
                     
-            
-                <!--Inseriamo un altra colonna tipo sm-4 -->
-                <div class="col-sm-4">
-                    <!-- Inseriamo un panello, cioe un riquadro dotato di titolo ci sono di diversi colori: 
-                        default, primary, success, info, warning, danger -->
-                    <div class="panel panel-primary">
-                        <!-- Inseriamo il titolo del panello -->
-                        <div class="panel-heading"> 
-                            <h3 class="panel-title">Tag cloud</h3>
-                        </div>
-                        <!-- Inseriamo il body del panello-->
-                        <div class="panel-body">
-                            <h1><a href="#"> Venezia </a></h1><h2><a href="#">Verona</a></h2> 
-                            <h1><a href="#">Padova</a></h1> <h2><a href="#">Chiesa si Sant'Antonio</a></h2>
-                            <h5><a href="#">Arena</a></h5>
-                        </div>
-                    </div>
-              </div> 
-        </div>
-    
-        
-        </div> <!-- /container>
+              </div> <!-- /col-sm-4-->
+               
+                
+              </div>
+            </div> <!-- /container>
         
     
         <!-- Footer -->
