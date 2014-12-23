@@ -1,3 +1,7 @@
+body{
+    margin-top: 62px;
+}
+
 .carousel {
     margin-bottom: 40px; margin-top: 50px;
 }
@@ -15,15 +19,19 @@
     display: inline;
 }
 footer{
-    text-align: center;
+    background-color: #222;
+    color:#888;
+}
+.navbar{
+    color:#888;
 }
 
 div.bandiera{
     display: inline;
 }
 div.bandiera img{
-    height: 16px;
-    margin-top: 5px;
+    height: 22px;
+    margin-top: 15px;
 }
 
 #ricerca{
