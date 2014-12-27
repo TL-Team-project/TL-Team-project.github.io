@@ -1,21 +1,117 @@
 <!doctype html>
 <html lang="it">
     <head>
-        <meta charset="utf-8">
+      <meta charset="utf-8">
         <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Titolo, descrizione, autore -->
-        <title>Regione Veneto</title>
-        <meta name="description" content="Informazioni sulla nostra regione Veneto">
-        <meta name="author" content="Studenti del corso di Web Design">
+      <title>Regione Veneto</title>
+      <meta name="description" content="Informazioni sulla nostra regione Veneto">
+      <meta name="author" content="Studenti del corso di Web Design">
         <!-- CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/stileSite.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/stileSite.css" rel="stylesheet">
     </head>
 
     <body>
         <!-- Barra di navigazione -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+<<<<<<< HEAD
+            <div class="container">
+
+                <!-- header della navbar -->
+                <div class="navbar-header">
+                    <!-- Pulsante per device mobile -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <!-- Lineete-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo o il nome del sito -->
+                    <a class="navbar-brand" href="index.html"> <img src="img/logo2.jpg"> </a>
+                    <!--selettori lingua -->
+                    <div class="nav navbar-nav  bandiera">
+                        <a href="#"><img src="img/it.png"></a><br>
+                        <a href="#"><img src="img/en.png"></a>
+                    </div>
+                </div>    
+
+                <!--Inizia la parte che viene fata collassare su device mobile -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Primo link dropdown-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Regione <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/storia.html">Storia</a></li>
+                                <li><a href="/storia.html">Dialetto</a></li>
+                                <li><a href="/storia.html">Clima</a></li>
+                            </ul>
+                        </li>
+                        <!-- Secondo Link dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Dove <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/dove/venezia">Venezia</a></li>
+                                <li><a href="/dove/venezia">Padova</a></li>
+                                <li><a href="/dove/venezia">Treviso</a></li>
+                                <li><a href="/dove/venezia">Verona</a></li>
+                                <li><a href="/dove/venezia">Vicenza</a></li>
+                                <li><a href="/dove/venezia">Belluno</a></li>
+                                <li><a href="/dove/venezia">Rovigo</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Terzo Link dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Cosa visitare <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/cosaVisitare/musei">Musei</a></li>
+                                <li><a href="/cosaVisitare/musei">Piazze</a></li>
+                                <li><a href="/cosaVisitare/musei">Chiese</a></li>
+                                <li><a href="/cosaVisitare/musei">Edifici storici</a></li>
+                                <li><a href="/cosaVisitare/musei">Luoghi</a></li>
+                                <li><a href="/cosaVisitare/musei">Sagre</a></li>
+                                <li><a href="/cosaVisitare/musei">Fiere</a></li>
+                                <li><a href="/cosaVisitare/musei">Mostre</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Quarto Link dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Che turista sei? <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/cheTuristaSei/solitario">Viaggiatore solitario</a></li>
+                                <li><a href="/cheTuristaSei/solitario">Con la famiglia</a></li>
+                                <li><a href="/cheTuristaSei/solitario">Studente</a></li>
+                            </ul>
+                        </li>  
+                        <!-- Link semplice-->
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+         
+                    <!-- La zona a destra -->
+                    <div class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left" role="search" id="ricerca">
+                            <div class="inner-addon left-addon">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <input type="text" class="form-control" placeholder="Ricerca nel sito.." />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+=======
           <div class="container">
               
               <!-- header della navbar -->
@@ -29,8 +125,8 @@
                  </button>
                  <!-- Logo o il nome del sito -->
                   <a class="navbar-brand" href="index.html"> <img src="img/logo2.jpg"> </a>
-                  <a class="navbar-brand" href="#"> <img class="img_lingua" src="img/it.png"></a>
-                  <a class="navbar-brand" href="#"> <img class="img_lingua" src="img/en.png"></a>
+                  <a class="navbar-brand" href="#"> <img src="img/it.png"></a>
+                  <a class="navbar-brand" href="#"> <img src="img/en.png"></a>
              </div>    
              
              <!--Inizia la parte che viene fata collassare su device mobile -->
@@ -104,12 +200,13 @@
                        <button type="submit" class="btn btn-default">Search</button>
                    </form>
                       <!-- Link semplice-->
-                     <li><a href="login/">Login</a></li>
+                     <li><a href="#">Login</a></li>
                  </ul>
              </div>
           </div>
+>>>>>>> k_test01
         </nav>
-
+        
         <!-- Carousel-->
         <div id="myCarousel" class="carousel slide">
             <!-- Indicatori di posizione -->
@@ -117,14 +214,14 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
             </ol>
-
+            
             <!-- La classe carousel-inner si occupa di tutto ciò che è dentro il carousel -->
             <div class="carousel-inner">
-
+                
                 <!-- Prima slide --->
                 <div class="item active">
                     <!-- inseriamo l'immagine e il testo alternativo -->
-                    <img src="img/venezia.jpg" alt="Welcome to Venice">
+                    <img src="img/slide1.jpg" alt="Welcome">
                     <!-- Inseriamo un container per inserire il testo e le discalia -->
                     <div class="container">
                         <!-- Inseriamo la didascalia --->
@@ -134,11 +231,11 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <!-- Seconda slide -->
                 <div class="item">
                     <!-- Inseriamo l'immagine -->
-                    <img src="img/venezia.jpg" alt="Welcome to Padova">
+                    <img src="img/slide1.jpg" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1> <em>La città di Padova</em> </h1> 
@@ -146,30 +243,27 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- Pulsanti -->
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span></a>
+              <span class="glyphicon glyphicon-chevron-left"></span></a>
             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div> <!-- /.carousel -->
-
-
-        <!-- Corpo della pagina -->
+        
+             
+       <!-- Corpo della pagina -->
         <div class="container">
             <!-- Header della pagina -->
             <div class="page-header">
                 <h1>
-                    Benvenuti in Veneto, mille motivi per visitarla
+                  Benvenuti in Veneto, mille motivi per visitarla
                 </h1>
             </div>
-            <!-- Inseriamo una riga -->
+            <!-- Inseriamo una nuova riga -->
             <div class="row">
-                <!--Inseriamo una colonna col-sm-8-->
                 <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>
+                    <p>
                          <strong>Venezia</strong> dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacu
                         egetlorem convallis, mollis felis faucibus, tempor eros. Aliquam dignissim commodo magna,
                         in orci semper eu. Sed sit amet nibh vel eros mollis semper. Etiam magna est, mattis ut 
@@ -181,13 +275,23 @@
                         loremin orci semper eu. Sed sit amet nibh vel eros <strong>Treviso</strong>. Etiam magna est, 
                         dignissim hendrerit, placerat ac tortor. Aenean at fermentum nisl. Aliquam non consectetur
                         lorem
-                          </p>
-                       </div>
-                    </div>
-                    
-                    <div class="row">
-                      <h2><p>Area notizie, aprofondimenti</p></h2>
-                      <div class="col-sm-4">
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                   
+                    <h3> <p> Eventi del momento </p></h3>
+                    <p> <a href="#">Evento_1</a> giorno/mese/anno</p> 
+                    <p><a href="#">Evento_2</a> giorno/mese/anno<p/>
+                    <p><a href="#">Evento_3</a> giorno/mese/anno</p>
+                     
+                </div>
+            </div>
+            <!--Inseriamo una riga -->
+            <div class="row">
+                <!--Inseriamo una colonna tipo sm-8 -->
+                <div class="col-sm-8">
+                    <h3><p>Area notizie</p></h3>
+                    <div class="col-sm-4">
                         <div class="panel panel-info">
                         <!-- Inseriamo il titolo del panello -->
                           <div class="panel-heading"> 
@@ -197,10 +301,9 @@
                           <div class="panel-body">
                              <p>scheda notizia_1</p>
                           </div>
-                        </div>
-                      </div>  
-                        
-                      <div class="col-sm-4">
+                       </div>
+                    </div>
+                    <div class="col-sm-4">
                         <div class="panel panel-info">
                         <!-- Inseriamo il titolo del panello -->
                           <div class="panel-heading"> 
@@ -211,9 +314,8 @@
                             <p>scheda notizia_2</p>
                           </div>
                        </div>
-                     </div>
-                        
-                     <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
                         <div class="panel panel-info">
                         <!-- Inseriamo il titolo del panello -->
                           <div class="panel-heading"> 
@@ -224,44 +326,34 @@
                              <p>scheda notizia_3</p>
                           </div>
                        </div>
-                     </div>
-                 </div>
-               </div> <!-- /colonna sm-8-->
+                    </div>
+                 
+                </div>
                 
-                <!--Inseriamo la seconda colonna col-sm-4-->
-               <div class="col-sm-4">
-                   <div class="row">
-                       <div class="col-sm-12">
-                            <h3> <p> Eventi del momento </p></h3>
-                            <p> <a href="#">Evento_1</a> giorno/mese/anno</p> 
-                            <p><a href="#">Evento_2</a> giorno/mese/anno<p/>
-                            <p><a href="#">Evento_3</a> giorno/mese/anno</p>
-                            <br>
-                       </div>
-                   </div>
-                   
-                   <div class="row">
-                       <div class="col-sm-12">
-                           <div class="panel panel-primary">
-                            <!-- Inseriamo il titolo del panello -->
-                             <div class="panel-heading"> 
-                               <h3 class="panel-title">Tag cloud</h3>
-                            </div>
-                             <!-- Inseriamo il body del panello-->
-                              <div class="panel-body">
-                               <h1><a href="dove/venezia/"> Venezia </a></h1><h2><a href="#">Verona</a></h2> 
-                               <h1><a href="#">Padova</a></h1> <h2><a href="#">Chiesa si Sant'Antonio</a></h2>
-                               <h5><a href="#">Arena</a></h5>
-                             </div>
-                         </div>
-                       </div>
-                   </div>                   
+                
                     
-              </div> <!-- /col-sm-4-->
-               
-                
-              </div>
-            </div> <!-- /container>
+            
+                <!--Inseriamo un altra colonna tipo sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Inseriamo un panello, cioe un riquadro dotato di titolo ci sono di diversi colori: 
+                        default, primary, success, info, warning, danger -->
+                    <div class="panel panel-primary">
+                        <!-- Inseriamo il titolo del panello -->
+                        <div class="panel-heading"> 
+                            <h3 class="panel-title">Tag cloud</h3>
+                        </div>
+                        <!-- Inseriamo il body del panello-->
+                        <div class="panel-body">
+                            <h1><a href="#"> Venezia </a></h1><h2><a href="#">Verona</a></h2> 
+                            <h1><a href="#">Padova</a></h1> <h2><a href="#">Chiesa si Sant'Antonio</a></h2>
+                            <h5><a href="#">Arena</a></h5>
+                        </div>
+                    </div>
+              </div> 
+        </div>
+    
+        
+        </div> <!-- /container>
         
     
         <!-- Footer -->

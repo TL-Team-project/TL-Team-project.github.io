@@ -1,59 +1,30 @@
-body{
-    margin-top: 62px;
-}
-
 .carousel {
     margin-bottom: 40px; margin-top: 50px;
 }
 .carousel-caption {
     z-index: 10;
 }
-@media (max-width: 992px) {
-    .carousel-inner p {font-size: 14px; }
-    .carousel-inner h1 {font-size: 26px; }
-    .featurette {margin-top: -25px;}
-}
-@media (max-width: 768px) {
-    .carousel-inner p {font-size: 12px; }
-    .carousel-inner h1 {font-size: 22px; }
-    .featurette {margin-top: -35px;}
-}
-@media (max-width: 500px){
-    .carousel-inner p {display: none;}
-    .carousel-inner h1 {font-size: 12px;}
-    .featurette {margin-top: -40px;}
-}
 .marketing .col-sm-4 {
     text-align: center;
 } 
-
-.panel-body > h1, h2, h3, h4, h5 {
-    display: inline;
-}
-.img_lingua {
-    max-height: 30px; max-width: 30px;
-}
 .breadcrumb {
     /* Aumentiamo il margine superiore e diminuiamo il margine inferiore */
     margin-top: 50px; margin-bottom: -15px;
 }
-.footer {
-    background: red;
+.panel-body > h1, h2, h3, h4, h5 {
+    display: inline;
+<<<<<<< HEAD:css/stileSito.css
 }
 footer{
-    background-color: #222;
-    color:#888;
-}
-.navbar{
-    color:#888;
+    text-align: center;
 }
 
 div.bandiera{
     display: inline;
 }
 div.bandiera img{
-    height: 22px;
-    margin-top: 15px;
+    height: 16px;
+    margin-top: 5px;
 }
 
 #ricerca{
@@ -84,7 +55,6 @@ div.bandiera img{
 @media (max-width: 767px){
     div.bandiera img{
         margin-top: -10px;
-  
     }
     div.bandiera br{
         display: none;
@@ -94,5 +64,6 @@ div.bandiera img{
 .navbar-left{
     margin-left: 0px;
     margin-right: 0px;
-
+=======
+>>>>>>> k_test01:css/stileSite.css
 }
