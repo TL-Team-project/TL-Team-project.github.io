@@ -21,3 +21,11 @@
 .my_footer {
     background-color: #D6C59A;
 }
+.container_img {
+    max-width: 150px; max-height: 100px;
+    float: right;
+}
+.container_img2 {
+    max-width: 50%; max-height: 50%;
+    float: right;
+}
