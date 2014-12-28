@@ -37,15 +37,16 @@ body{
     /* Aumentiamo il margine superiore e diminuiamo il margine inferiore */
     margin-top: 50px; margin-bottom: -15px;
 }
-.footer {
-    background: red;
+.my_footer {
+    background-color: #D6C59A;
 }
-footer{
-    background-color: #222;
-    color:#888;
+.container_img {
+    max-width: 100px; max-height: 100px;
+    float: right;
 }
-.navbar{
-    color:#888;
+.container_img2 {
+    max-width: 50%; max-height: 50%;
+    float: right;
 }
 
 div.bandiera{
@@ -95,4 +96,7 @@ div.bandiera img{
     margin-left: 0px;
     margin-right: 0px;
 
+}
+.navbar{
+    color:#888;
 }

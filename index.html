@@ -17,12 +17,109 @@
         });
         </script>
         <!-- CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/stileSite.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/stileSite.css" rel="stylesheet">
+      <link href="css/media_query.css" rel="stylesheet">
+      <link href="css/media_print.css" rel="stylesheet">
     </head>
 
     <body>
-
+        <!-- Barra di navigazione -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              
+              <!-- header della navbar -->
+              <div class="navbar-header">
+                  <!-- Pulsante per device mobile -->
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <!-- Lineete-->
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+                 <!-- Logo o il nome del sito -->
+                  <a class="navbar-brand" href="index.html"> <img src="img/logo2.jpg"> </a>
+                  <a class="navbar-brand" href="#"> <img class="img_lingua" src="img/it.png"></a>
+                  <a class="navbar-brand" href="#"> <img class="img_lingua" src="img/en.png"></a>
+             </div>    
+             
+             <!--Inizia la parte che viene fata collassare su device mobile -->
+             <div class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                     <!-- Primo link dropdown-->
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Regione <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="regione/storia.html">Storia</a></li>
+                            <li><a href="regione/storia.html">Dialetto</a></li>
+                            <li><a href="regione/storia.html"> Clima</a></li>
+                         </ul>
+                     </li>
+                     <!-- Secondo Link dropdown -->
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Dove <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="dove/venezia/">Venezia</a></li>
+                            <li><a href="dove/venezia/">Padova</a></li>
+                            <li><a href="dove/venezia/">Verona</a></li>
+                            <li><a href="dove/venezia/">Treviso</a></li>
+                            <li><a href="dove/venezia/">Rovigo</a></li>
+                            <li><a href="dove/venezia/">Vicenza</a></li>
+                            <li><a href="dove/venezia/">Belluno</a></li>
+                         </ul>
+                     </li>
+                     
+                     <!-- Terzo Link dropdown -->
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Cosa visitare <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="cosaVisitare/musei.html">Musei</a></li>
+                            <li><a href="cosaVisitare/musei.html">Chiese</a></li>
+                            <li><a href="cosaVisitare/musei.html">Luoghi</a></li>
+                            <li><a href="cosaVisitare/musei.html">Edifici storici</a></li>
+                            <li><a href="cosaVisitare/musei.html">Mostre</a></li>
+                            <li><a href="cosaVisitare/musei.html">Sagre</a></li>
+                         </ul>
+                     </li>
+                     
+                    <!-- Quarto Link dropdown -->
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Che turista sei? <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="cheTuristaSei/solitario/">Singolo viaggiatore</a></li>
+                            <li><a href="cheTuristaSei/famiglia/">Con la famiglia</a></li>
+                            <li><a href="cheTuristaSei/studente/">Studente</a></li>
+                         </ul>
+                     </li>  
+                     
+                 </ul>
+                 
+                 <!-- La zona a destra -->
+                 <ul class="nav navbar-nav navbar-right">
+                   <form class="navbar-form navbar-left" role="search">
+                       <!-- campo compilabile-->
+                       <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Looking for something?">
+                       </div>
+                       <!-- Pulsante di ricerca -->
+                       <button type="submit" class="btn btn-default">Search</button>
+                   </form>
+                      <!-- Link semplice-->
+                     <li><a href="login/">Login</a></li>
+                 </ul>
+             </div>
+          </div>
+        </nav>
+        
         <!-- Carousel-->
         <div id="myCarousel" class="carousel slide">
             <!-- Indicatori di posizione -->
@@ -66,10 +163,10 @@
             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div> <!-- /.carousel -->
-
-
-        <!-- Corpo della pagina -->
-        <div class="container">
+        
+             
+       <!-- Corpo della pagina -->
+        <div class="container" id="my_homepage">
             <!-- Header della pagina -->
             <div class="page-header">
                 <h1>
@@ -97,50 +194,50 @@
                             </p>
                         </div>
                     </div>
-
+                     <hr class="featurette-divider">
                     <div class="row">
-                        <h2><p>Area notizie, aprofondimenti</p></h2>
-                        <div class="col-sm-4">
-                            <div class="panel panel-info">
-                                <!-- Inseriamo il titolo del panello -->
-                                <div class="panel-heading"> 
-                                    <h3 class="panel-title">Notizia 1</h3>
-                                </div>
-                                <!-- Inseriamo il body del panello-->
-                                <div class="panel-body">
-                                    <p>scheda notizia_1</p>
-                                </div>
-                            </div>
-                        </div>  
-
-                        <div class="col-sm-4">
-                            <div class="panel panel-info">
-                                <!-- Inseriamo il titolo del panello -->
-                                <div class="panel-heading"> 
-                                    <h3 class="panel-title">Notizia 2</h3>
-                                </div>
-                                <!-- Inseriamo il body del panello-->
-                                <div class="panel-body">
-                                    <p>scheda notizia_2</p>
-                                </div>
-                            </div>
+                      <h2><p>Area notizie, aprofondimenti</p></h2>
+                      <div class="col-sm-4">
+                        <div class="panel panel-info">
+                        <!-- Inseriamo il titolo del panello -->
+                          <div class="panel-heading"> 
+                            <h3 class="panel-title">Notizia 1</h3>
+                          </div>
+                          <!-- Inseriamo il body del panello-->
+                          <div class="panel-body">
+                             <p>scheda notizia_1</p>
+                          </div>
                         </div>
-
-                        <div class="col-sm-4">
-                            <div class="panel panel-info">
-                                <!-- Inseriamo il titolo del panello -->
-                                <div class="panel-heading"> 
-                                    <h3 class="panel-title">Notizia 3</h3>
-                                </div>
-                                <!-- Inseriamo il body del panello-->
-                                <div class="panel-body">
-                                    <p>scheda notizia_3</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- /colonna sm-8-->
-
+                      </div>  
+                        
+                      <div class="col-sm-4">
+                        <div class="panel panel-info">
+                        <!-- Inseriamo il titolo del panello -->
+                          <div class="panel-heading"> 
+                            <h3 class="panel-title">Notizia 2</h3>
+                          </div>
+                          <!-- Inseriamo il body del panello-->
+                          <div class="panel-body">
+                            <p>scheda notizia_2</p>
+                          </div>
+                       </div>
+                     </div>
+                        
+                     <div class="col-sm-4">
+                        <div class="panel panel-info">
+                        <!-- Inseriamo il titolo del panello -->
+                          <div class="panel-heading"> 
+                            <h3 class="panel-title">Notizia 3</h3>
+                          </div>
+                          <!-- Inseriamo il body del panello-->
+                          <div class="panel-body">
+                             <p>scheda notizia_3</p>
+                          </div>
+                       </div>
+                     </div>
+                 </div>
+               </div> <!-- /colonna sm-8-->
+                
                 <!--Inseriamo la seconda colonna col-sm-4-->
                 <div class="col-sm-4">
                     <div class="row">
@@ -149,52 +246,55 @@
                             <p> <a href="#">Evento_1</a> giorno/mese/anno</p> 
                             <p><a href="#">Evento_2</a> giorno/mese/anno<p/>
                             <p><a href="#">Evento_3</a> giorno/mese/anno</p>
-                            <br>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="panel panel-primary">
-                                <!-- Inseriamo il titolo del panello -->
-                                <div class="panel-heading"> 
-                                    <h3 class="panel-title">Tag cloud</h3>
-                                </div>
-                                <!-- Inseriamo il body del panello-->
-                                <div class="panel-body">
-                                    <h1><a href="dove/venezia/"> Venezia </a></h1><h2><a href="#">Verona</a></h2> 
-                                    <h1><a href="#">Padova</a></h1> <h2><a href="#">Chiesa si Sant'Antonio</a></h2>
-                                    <h5><a href="#">Arena</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-
-                </div> <!-- /col-sm-4-->
-
-
-            </div>
-        </div> <!-- /container>
+                       </div>          
+                   </div>
+                    <hr class="featurette-divider">
+                   <div class="row">
+                       <div class="col-sm-12">
+                           <div class="panel panel-primary">
+                            <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Tag cloud</h3>
+                             </div>
+                             <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <h1><a href="dove/venezia/"> Venezia </a></h1>
+                               <h3><a href="dove/venezia/musei_Venezia.html"> Musei </a></h3>
+                               <h2><a href="dove/venezia/museo_1.html"> Leonardo </a> </h2>
+                               <h2><a href="#"> Verona </a></h2> 
+                               <h1><a href="#"> Padova </a></h1> 
+                               <h3><a href="#"> Chiesa Sant'Antonio </a></h3>
+                               <h5><a href="#"> Arena </a></h5>
+                             </div>
+                         </div>
+                       </div>
+                   </div>                   
+                    
+              </div> <!-- /col-sm-4-->
+               
+                
+              </div>
+            </div> <!-- /container>
+        
     
-
         <!-- Footer -->
-        <div class="container">
-            <footer>
-                <!-- Inseriamo una riga -->
-                <hr class="featurette-divider">
-                <!-- Lasciamo il link #, cosi si ricarica la pagina -->
-                <span>
-                    Seguici su: <a href="#"> Facebook </a> <a href="#"> Twitter </a>
-                </span>
-                <span class="pull-right"> 
-                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
-                    <a href="#"> Contattaci </a>
-                </span>
-
+           <footer class="my_footer">
+                    <!-- Inseriamo una riga -->
+                <hr class="featurette-divider">        
+                   <div class="container">
+                        <span>           
+                           Seguici su: <a href="#"> Facebook, </a> <a href="#"> Twitter </a>
+                        </span>
+                        <span class="pull-right"> 
+                            TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti, </a>
+                            <a href="#"> Contattaci </a>
+                        </span>  
+                        <br><br>
+                   </div>         
             </footer>
-        </div>
-
-        <!-- Script -->
+        
+        
+          <!-- Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
     </body>

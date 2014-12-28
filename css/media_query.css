@@ -1,28 +1,38 @@
 @media (max-width: 1200px) {
     .breadcrumb {margin-top: 100px; margin-bottom: -15px;}
+    .carousel {margin-top: 100px;}
 }
 @media (max-width: 1000px) {
     .breadcrumb {margin-top: 150px; margin-bottom: -15px;}
+    .carousel {margin-top: 150px;}
 }
-@media (max-width: 992px) {
-    
+@media (max-width: 992px) {  
     .carousel-inner p {font-size: 14px; }
     .carousel-inner h1 {font-size: 26px; }
     .featurette {margin-top: -25px;}
 }
 @media (max-width: 768px) {
-    .breadcrumb {margin-top: 50px; margin-bottom: -15px;}
+    .breadcrumb {margin-top: 50px; margin-bottom: -25px;}
+    .carousel {margin-top: 50px; margin-bottom: -10px;}
     .carousel-inner p {font-size: 12px; }
     .carousel-inner h1 {font-size: 22px; }
     .featurette {margin-top: -35px;}
 }
 @media (max-width: 500px){
-    .breadcrumb {margin-top: 50px; margin-bottom: -15px;}
     .carousel-inner p {display: none;}
     .carousel-inner h1 {font-size: 12px;}
     .featurette {margin-top: -40px;}
-}@media (max-width: 400px) {
-    .breadcrumb {margin-top: 100px; margin-bottom: -15;}
+}
+@media (max-width: 400px) {
+    .breadcrumb {margin-top: 50px; margin-bottom: -15px;}
+    .carousel {margin-top: 50px; margin-bottom: -15px;}
+}   
+@media (max-width: 384px) {
+    .carousel {margin-top: 100px; margin-bottom: -15px;}
+    .breadcrumb {margin-top: 100px; margin-bottom: -15px;}
 }
 @media (max-width: 320px) {
+    .carousel {display: none;}
+    #my_homepage {margin-top: 80px;}
 }
+
