@@ -8,13 +8,14 @@
         <title>Regione Veneto</title>
         <meta name="description" content="Informazioni sulla nostra regione Veneto">
         <meta name="author" content="Studenti del corso di Web Design">
-		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script>
-		$(function() {
-			$("body").prepend('<nav class="navbar navbar-default navbar-fixed-top" id="NavBar">');
-			$("#NavBar").load('navbar.html');
-		});
-		</script>
+        <base href=".">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+        $(function() {
+                $("body").prepend('<nav id="NavBar">');
+                $("#NavBar").load('navbar.html');
+        });
+        </script>
         <!-- CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/stileSite.css" rel="stylesheet">

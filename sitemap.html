@@ -1,25 +1,26 @@
 <!doctype html>
 <html lang="it">
     <head>
-      <meta charset="utf-8">
+        <meta charset="utf-8">
         <!-- Viewport -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Titolo, descrizione, autore -->
         <title>Regione Veneto</title>
         <meta name="description" content="Informazioni sulla nostra regione Veneto">
         <meta name="author" content="Studenti del corso di Web Design">
-		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script>
-		$(function() {
-			$("body").prepend('<nav class="navbar navbar-default navbar-fixed-top" id="NavBar">');
-			$("#NavBar").load('navbar.html');
-		});
-		</script>
+        <base href=".">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar">');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
         <!-- CSS -->
-      <link href="../../css/bootstrap.css" rel="stylesheet">
-      <link href="../../css/stileSite.css" rel="stylesheet">
-      <link href="../../css/media_query.css" rel="stylesheet">
-      <link href="../../css/media_print.css" rel="stylesheet">
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="../../css/stileSite.css" rel="stylesheet">
+        <link href="../../css/media_query.css" rel="stylesheet">
+        <link href="../../css/media_print.css" rel="stylesheet">
     </head>
 
     <body>
@@ -31,16 +32,16 @@
                 <li class="active">pagina_1</li>
             </ol>
         </div> <!-- ./breadcrumps -->
-        
-       <!-- Corpo della pagina -->
+
+        <!-- Corpo della pagina -->
         <div class="container">
             <!-- Header della pagina -->
             <div class="page-header">
                 <h1>
-                  Titolo pagina
+                    Titolo pagina
                 </h1>
             </div>
-            
+
         </div> <!-- /container>
           
         <!-- Footer -->
@@ -56,11 +57,11 @@
                     TL-team 2014 - <a href="../../sitemap.html"> Indice dei contenuti </a>
                     <a href="#"> Contattaci </a>
                 </span>
-                
+
             </footer>
         </div>
-        
-          <!-- Script -->
+
+        <!-- Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../../js/bootstrap.js"></script>
     </body>
