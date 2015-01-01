@@ -12,7 +12,7 @@
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script>
         $(function() {
-                $("body").prepend('<nav id="NavBar">');
+                $("body").prepend('<nav id="NavBar" />');
                 $("#NavBar").load('navbar.html');
         });
         </script>
@@ -200,7 +200,12 @@
         
         
           <!-- Script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+		<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+<script 
+   src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+</script>
+<![endif]-->
     </body>
 </html>
