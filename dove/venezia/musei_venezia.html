@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <base href="../../">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar">');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dove/venezia/">Dove: Venezia</a></li>
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Musei</li>
+            </ol>
+        </div> <!-- ./breadcrumps -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+                 <!-- Header della pagina -->
+            <div class="page-header">
+                <h1>
+                  Musei di Venezia. <small> Capolavori da non perdere </small>
+                </h1>
+            </div>
+            
+            <!--Inseriamo una riga-->
+            <div class="row">
+                <!--Inseriamo la prima colonna-->
+                <div class="col-sm-8">
+                    <!--Ineseriamo una riga per il primo contenuto-->
+                    <div class="row">
+                        <div class="col-sm-12">        
+                          <div>
+                              <div class="container_img"> 
+                                <!--Immagine-->
+                            <a href="dove/venezia/museo_1.html">
+                            <img class="img-responsive" src="img/museo-archeologico-nazionale-venezia-274x180.jpg">
+                            </a>
+                             </div>  
+                             <!--Testo-->
+                              <h3><p>Museo archeologico </p></h3>
+                             <p>          
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacus.
+                               Vivamus eget lorem convallis, mollis felis faucibus, tempor eros. Aliquam dignissim
+                               commodo magna, in lacinia orci semper eu. Sed sit amet nibh vel eros mollis semLorem 
+                               ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec metus lacus. 
+                               Vivamus eget lorem convallis, mollis felis faucibus, tempor eros. Aliquam 
+                             </p>
+                             <p>
+                              <a href="dove/venezia/museo_1.html">
+                                <button type="button" class="btn btn-info btn-sm">Per di più</button></a>
+                             </p>
+                          </div>
+                        </div>                  
+                    </div>
+                    <hr>
+                    
+                    <!--Inseriamo il secondo contenuto-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div>
+                                <!--Immagine-->
+                            <div class="container_img">
+                                <a href="dove/venezia/museo_1.html">
+                                  <img class="img-responsive" src="img/fondaco-turchi22-274x180.jpg"></a>
+                            </div>
+                            <!--Testo--> 
+                              <h3><p>Museo di storia </p></h3>
+                              <p>
+                               Vestibulum scelerisque scelerisque diam at lacinia. Donec posuere risus libero,
+                               lacinia sollicitudin neque tincidunt et. In hac habitasse platea dictumst. Morbi id
+                               massa a erat volutpat vehicula eu sed quam. Vivamus sed diam sollicitudin, viverra  
+                               dolor a, facilisis nulla. Aliquam erat volutpat. Pellentesque vel odio id urna 
+                               accumsan dignissim ut sed nisl. Mauris sem ipsum, porttitor et odio in, pharetra 
+                               porttitor libero.
+                            </p>
+                            <p>
+                              <a href="dove/venezia/museo_1.html">
+                                <button type="button" class="btn btn-info btn-sm">Per di più</button></a>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <!--Inseriamo il terzo contenuto-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                         <div>
+                                <!--Immagine-->
+                           <div class="container_img">
+                            <a href="dove/venezia/museo_1.html">
+                            <img class="img-responsive" src="img/museo-del-vetro-murano-venezia-274x180.jpg"></a>
+                          </div>
+                            <!--Testo-->
+                            <h3><p>Museo del vetro </p></h3>
+                            <p>
+                                Praesent et velit sed nisl aliquet accumsan ac eget libero. Vestibulum ac
+                                ullamcorper ipsum, bibendum rutrum sem. Curabitur eu ante metus. Etiam eros lectus,
+                                lacinia nec aliquam nec, viverra nec ante. Mauris mollis ullamcorper urna, a auctor
+                                ex tincidunt at. Nulla vel mauris felis. Fusce malesuada, tortor ac malesuada
+                                sollicitudin, purus velit consequat risus, sit amet cursus est justo ut mi. Aenean
+                                vel tincidunt orci, nec aliquet ex. Morbi venenatis felis semper tortor tristique
+                                blandit. Phasellus nunc tortor, varius
+                            </p>
+                            <p>
+                              <a href="dove/venezia/museo_1.html">
+                                <button type="button" class="btn btn-info btn-sm">Per di più</button></a>
+                            </p>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Inseriamo la seconda colonna-->
+                <div class="col-sm-4">
+                     <div class="panel panel-default">
+                     <div class="panel-body">  
+                     <h3><p class="text-center">Visita anche:</p></h3>
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <div>
+                              <div class="container_img3">
+                               <a href="dove/venezia/musei_venezia.html">
+                               <img class="img-responsive" src="img/img1.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/musei_venezia.html">Musei di Padova</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div>
+                      </div>
+                    </div> <br><br>
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                           <div>
+                              <div class="container_img3">
+                               <a href="dove/venezia/musei_venezia.html">
+                               <img class="img-responsive" src="img/img2.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/musei_venezia.html">Musei di Verona</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div> 
+                        </div>
+                    </div><br><br>
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                           <div>
+                              <div class="container_img3">
+                               <a href="dove/venezia/musei_venezia.html">
+                               <img class="img-responsive" src="img/img3.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/musei_venezia.html">Musei di Treviso</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div>  
+                        </div>
+                    </div><br><br>
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                           <div>
+                              <div class="container_img3">
+                               <a href="dove/venezia/musei_venezia.html">
+                               <img class="img-responsive" src="img/img4.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/musei_venezia.html">Musei di Vicenza</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div>  
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+                </div> <!--/Secondo colonna-->
+                </div> <!--/row-->
+               
+                <hr>
+                <ul class="pagination">
+                   <li><a>&laquo;</a></li>
+                   <li class="active"><a>1</a></li>
+                   <li><a href="dove/venezia/musei_venezia.html">2</a></li>
+                   <li><a href="dove/venezia/musei_venezia.html">3</a></li>
+                   <li><a href="dove/venezia/musei_venezia.html">4</a></li>
+                   <li><a href="dove/venezia/musei_venezia.html">5</a></li>
+                   <li><a>&raquo;</a></li>
+                </ul>
+            
+        </div> <!--/container-->
+        
+        
+ 
+        <!-- Footer -->
+        <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">
+                <span>           
+                    Seguici su: <a href="#"> Facebook, </a> <a href="#"> Twitter </a>
+                </span>
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti, </a>
+                    <a href="#"> Contattaci </a>
+                </span>  
+                <br><br>
+            </div>         
+        </footer>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
