@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Titolo, descrizione, autore -->
+        <title>Regione Veneto</title>
+        <meta name="description" content="Informazioni sulla nostra regione Veneto">
+        <meta name="author" content="Studenti del corso di Web Design">
+        <base href="../">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar">');
+                $("#NavBar").load('navbar.html');
+                //gestori bottoni
+                $("#btnHome").click(function () {
+                    document.location.href = "index.html";
+                });
+                $("#btnCanc").click(function () {
+                    document.getElementById("frmRegistrazione").reset();
+                });
+
+            });
+        </script>
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet" media="print">
+    </head> 
+
+    <body>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>     
+                <!-- la pagina in qui ci troviamo -->
+                <li class="active">Registrazione nuovo utente</li>
+            </ol>
+        </div> <!-- ./breadcrumps -->
+
+        <!-- Corpo della pagina -->
+        <div class="container">
+            <!-- Header della pagina -->
+            <div class="page-header">
+                <h2>
+                    Fase 1: inserisci i dati di registrazione
+                </h2>
+
+            </div>
+            <div class="riga">
+                <div class="col-sm-9">
+                    <form id="frmRegistrazione" class="form-horizontal" action="login/mailSent.html" method="post">
+                        <fieldset>
+                            <div class="riga">
+                                <div class="col-sm-6">
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="txtUsername">User Name</label>
+                                        <div class="controls">
+                                            <input id="txtUsername" name="txtUsername" placeholder="inserire un identificativo personale" class="input-xlarge" required="" type="text">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- Password input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="txtPassword">Password</label>
+                                        <div class="controls">
+                                            <input id="txtPassword" name="txtPassword" placeholder="" class="input-xlarge" required="" type="password">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="riga">
+                                <div class="col-sm-6">
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="txtNome">Nome</label>
+                                        <div class="controls">
+                                            <input id="txtNome" name="txtNome" placeholder="Nome" class="input-xlarge" type="text" size="40">
+
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="col-sm-6">
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="txtCognome">Cognome</label>
+                                        <div class="controls">
+                                            <input id="txtCognome" name="txtCognome" placeholder="Cognome" class="input-xlarge" type="text" size="40">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="riga">
+                                <div class="col-sm-6">
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="txtEmail">E-mail</label>
+                                        <div class="controls">
+                                            <input id="txtEmail" name="txtEmail" placeholder="Indirizzo email" class="input-xlarge" required="" type="text" size="40">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="control-group">
+                                        <label class="control-label" for="selectbasic">Sesso</label>
+                                        <div class="controls">
+                                            <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                                                <option>Maschio</option>
+                                                <option>Femmina</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="riga">
+                                <div class="col-sm-12">
+                                    <!-- Button (Double) -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="btnCanc">azioni:</label>
+                                        <div class="controls">
+                                            <button id="btnHome" class="btn btn-primary">Torna alla home</button>
+                                            <input type="reset" id="btnReset" class="btn btn-warning" value="Cancella campi">
+                                            <input type="submit" id="btnSubmit" class="btn btn-success" value="Conferma i dati">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+                    </form>
+
+                </div>
+                <aside>
+                    <div class="col-sm-3">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="login/index.html">Login al sito</a></li>
+                            <li class="list-group-item"><a href="login/forgotPassword.html">Recupero password</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div> <!-- /container>
+          
+        <!-- Footer -->
+        <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">
+                <span>           
+                    Seguici su: <a href="#"> Facebook, </a> <a href="#"> Twitter </a>
+                </span>
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti, </a>
+                    <a href="#"> Contattaci </a>
+                </span>  
+                <br><br>
+            </div>         
+        </footer>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+    </body>
+</html>

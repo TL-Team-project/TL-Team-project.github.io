@@ -14,6 +14,10 @@
             $(function () {
                 $("body").prepend('<nav id="NavBar">');
                 $("#NavBar").load('navbar.html');
+                //gestori per i bottoni
+                $("#btnHome").click(function(){
+                    document.location.href="index.html";
+                });
             });
         </script>
         <!-- CSS -->
@@ -29,7 +33,7 @@
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>     
                 <!-- la pagina in qui ci troviamo -->
-                <li class="active">Login</li>
+                <li class="active">Registrazione nuovo utente</li>
             </ol>
         </div> <!-- ./breadcrumps -->
 
@@ -38,49 +42,34 @@
             <!-- Header della pagina -->
             <div class="page-header">
                 <h2>
-                    Inserisci i dati di login
+                    Fase 3: Nuovo account attivato
                 </h2>
+
             </div>
             <div class="riga">
-                <div class="col-sm-9">
-                    <form class="form-horizontal" id="frmLogin">
-                        <fieldset>
-                            <!-- Text input-->
-                            <div class="control-group">
-                                <label class="control-label" for="textinput">User name</label>
-                                <div class="controls">
-                                    <input id="textinput" name="textinput" placeholder="" class="input-xlarge" type="text">
-
-                                </div>
+                <div class="col-sm-7">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <h3>Account attivato</h3>
                             </div>
-
-                            <!-- Password input-->
-                            <div class="control-group">
-                                <label class="control-label" for="passwordinput">Password</label>
-                                <div class="controls">
-                                    <input id="passwordinput" name="passwordinput" placeholder="" class="input-xlarge" type="password">
-
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <h3>Benvenuto nella community!</h3>
+                            hai completato con successo l'attivazione del nuovo account su questo sito
+                            <hr>
+                            <div class="controls">
+                                <button id="btnHome" class="btn btn-success">Torna alla home</button>
                             </div>
-
-                            <!-- Button (Double) -->
-                            <div class="control-group">
-                                <label class="control-label" for="btnSubmit"></label>
-                                <div class="controls">
-                                    <input type="submit" id="btnSubmit" value="Inoltra" class="btn btn-success">
-                                    <input type="reset" id="btnReset" value="Cancella campi" class="btn btn-warning">
-                                </div>
-                            </div>
-
-                        </fieldset>
-                    </form>
+                        </div>
+                    </div>
 
                 </div>
                 <aside>
-                    <div class="col-sm-3">
+                    <div class="col-sm-5">
                         <ul class="list-group">
-                            <li class="list-group-item"><a href="login/forgotPassword.html">Hai dimenticato la password?</a></li>
-                            <li class="list-group-item"><a href="login/register.html">Registrati al sito</a></li>
+                            <li class="list-group-item"><a href="login/index.html">Login al sito</a></li>
+                            <li class="list-group-item"><a href="login/forgotPassword.html">Recupero password</a></li>
                         </ul>
                     </div>
                 </aside>
