@@ -4,3 +4,6 @@ aside, footer {
 body{
     margin-top: 0px;
 }
+@media print {
+	#tag-cloud, .my_footer {display: none;}
+}

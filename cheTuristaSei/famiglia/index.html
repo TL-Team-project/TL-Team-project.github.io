@@ -5,14 +5,14 @@
         <!-- Viewport -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Titolo, descrizione, autore -->
-        <title>Regione Veneto</title>
+        <title>Regione Veneto - famiglia</title>
         <meta name="description" content="Informazioni sulla nostra regione Veneto">
         <meta name="author" content="Studenti del corso di Web Design">
-		<base href=../../">
+		<base href="../../">
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script>
 		$(function() {
-			$("body").prepend('<nav id="NavBar">');
+			$("body").prepend('<nav id="NavBar" />');
 			$("#NavBar").load('navbar.html');
 		});
 		</script>
@@ -28,21 +28,137 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>     
-                <!-- la pagina in qui ci troviamo -->
-                <li class="active">pagina_1</li>
+                <!-- / Che turista sei / famiglia -->
+                <li class="active">Che turista sei: Famiglia</li>
             </ol>
-        </div> <!-- ./breadcrumps -->
+        </div> <!-- ./breadcrumbs -->
         
        <!-- Corpo della pagina -->
         <div class="container">
             <!-- Header della pagina -->
             <div class="page-header">
                 <h1>
-                  Titolo pagina
+                  Turismo per famiglie
                 </h1>
             </div>
             
-        </div> <!-- /container>
+            <!-- Inseriamo una nuova riga -->
+            <div class="row">
+                <!-- Inseriamo la prima colonna-->
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <div>
+                         <h2> <p>Vuoi sapere cosa visitare? </p></h2>
+                             <p>
+                            <strong>Aliquam dignissim</strong> commodo main orci semper eu.
+                              Sed sit amet nibh velSed sit amet nibh vel faucibus, tempor eros.
+                              erossemperegetlorem convallis, mollis felis faucibus, tempor eros.
+                              erossemperegetlorem convallis, mollis felis faucibus, tempor eros.
+                              Aliquamdignissim commodo magna, in orci semper eu. Sed sit amet nibh
+                              vel eros mollis semper. Etiam magna est, mattis ut
+                              tempor eros. Aliquam dignissim commodo main orci semper eu. Sed sit
+                              amet nibh vel erossem egetlorem convallis, mollis felis faucibus,
+                              tempor eros. Aliquam dignissim commodo magna, in orci semper eu. Sed
+                              sit amet nibh vel eros mollis semper.  
+                            </p>
+                       </div>
+                    </div>
+                  </div><br>
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Ristorante pizzeria Orobasilico</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  <strong>Ristorante con area bimbi per</strong>  ...<br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                                  Aliquam pulvinar consequat metus.
+                               </p>
+                               <a href="http://www.orobasilico.it/">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Associazione Aretusa</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  <strong>Ludoteca nei pressi di Piazzale Roma</strong>  ...<br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                                  Aliquam pulvinar consequat metus.
+                               </p>
+                               <a href="http://www.kidpass.it/le-strutture/venezia/associazione/associazione-aretusa">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Baby bazar Scorz&egrave;</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  <strong>A Scorz&egrave;, in provincia di Venezia, il pi&ugrave; grande negozio dell'usato bimbi a marchio Baby Bazar del Veneto.</strong>  ...<br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                                  Aliquam pulvinar consequat metus.
+                               </p>
+                               <a href="http://www.scorze.babybazar.it/">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- Inseriamo la seconda colonna -->
+                <div class="col-sm-4">
+                  <div class="row">
+                      <div class="col-sm-12">
+                        <div class="panel panel-default">
+                     <div class="panel-body">  
+                     <h3><p class="text-center">Visita anche:</p></h3>
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <div>
+                              <div class="container_img3">
+                               <a href="#">
+                               <img class="img-responsive" src="img/jesolo-mini.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/museo_1.html">Lido di Jesolo - programmazione spettacoli</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div>
+                      </div>
+                    </div> <br><br>
+                    
+                    </div>
+                    </div>
+                          
+                  </div> <!--/cl-sm-12-->                    
+                </div>
+            </div> <!-- /prima riga -->
+            </div>
+             <!-- /container>
           
         <!-- Footer -->
             <footer class="my_footer">

@@ -5,14 +5,14 @@
         <!-- Viewport -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Titolo, descrizione, autore -->
-        <title>Regione Veneto</title>
+        <title>Regione Veneto - solitario</title>
         <meta name="description" content="Informazioni sulla nostra regione Veneto">
         <meta name="author" content="Studenti del corso di Web Design">
-		<base href=../../">
+		<base href="../../">
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script>
 		$(function() {
-			$("body").prepend('<nav id="NavBar">');
+			$("body").prepend('<nav id="NavBar" />');
 			$("#NavBar").load('navbar.html');
 		});
 		</script>
@@ -27,22 +27,157 @@
         <!-- breadcrumbs -->
         <div class="container">
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <!-- la pagina in qui ci troviamo -->
-                <li class="active">questa pagina</li>
+                <li><a href="#">Home</a></li>     
+                <!-- / Che turista sei / solitario -->
+                <li class="active">Che turista sei: Solitario</li>
             </ol>
-        </div> <!-- ./breadcrumps -->
+        </div> <!-- ./breadcrumbs -->
         
        <!-- Corpo della pagina -->
         <div class="container">
             <!-- Header della pagina -->
             <div class="page-header">
                 <h1>
-                  Titolo pagina
+                  Avventura e scoperta
                 </h1>
             </div>
             
-        </div> <!-- /container>
+            <!-- Inseriamo una nuova riga -->
+            <div class="row">
+                <!-- Inseriamo la prima colonna-->
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-12">
+                       <div>
+                         <h2> <p>Vuoi sapere cosa visitare? </p></h2>
+                             <p>
+                            <strong>At vero eos et accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+                            </p>
+                       </div>
+                    </div>
+                  </div><br>
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">L'enoteca di Arqu&agrave;</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  <strong>Enoteca</strong> bottiglieria con servizio bar ad Arqu&agrave; Petrarca. Degustazioni vini e prodotti tipici stagionali del territorio e non solo
+                               </p>
+                               <a href="http://www.lenotecadiarqua.it/">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Discoteca Odissea</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  <strong>Discoteca Odissea</strong> a Spresiano ...<br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                                  Aliquam pulvinar consequat metus.
+                               </p>
+                               <a href="http://www.odisseafuncity.it">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Le terme di Abano e Montegrotto</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  <strong>A Scorz&egrave;, in provincia di Venezia, il pi&ugrave; grande negozio dell'usato bimbi a marchio Baby Bazar del Veneto.</strong>  ...<br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                                  Aliquam pulvinar consequat metus.
+                               </p>
+                               <a href="http://www.abano.it/">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="panel panel-primary">
+                             <!-- Inseriamo il titolo del panello -->
+                             <div class="panel-heading"> 
+                               <h3 class="panel-title">Museo all'aperto delle cinque torri</h3>
+                             </div>
+                               <!-- Inseriamo il body del panello-->
+                              <div class="panel-body">
+                               <p>
+                                  Nella zona delle 5 Torri si insedi&ograve; il Comando del gruppo di artiglieria da montagna. Qui furono dislocate le batterie di cannoni puntati contro le postazioni austriache del Lagazuoi e del Forte Tre Sassi.
+                               </p>
+                               <a href="http://www.dolomiti.org/ita/Cortina/laga5torri/musei/5torri.html">
+                                  <button type="button" class="btn btn-info btn-sm">
+                                  Vai al sito</button></a>
+                             </div>      
+                           </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <!-- Inseriamo la seconda colonna -->
+                <div class="col-sm-4">
+                  <div class="row">
+                      <div class="col-sm-12">
+                        <div class="panel panel-default">
+                     <div class="panel-body">  
+                     <h3><p class="text-center">Visita anche:</p></h3>
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <div>
+                              <div class="container_img3">
+                               <a href="dove/venezia/musei_venezia.html">
+                               <img class="img-responsive" src="img/arena.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/museo_1.html">Arena di Verona</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div>
+                      </div>
+                    </div> <br><br>
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <div>
+                              <div class="container_img3">
+                               <a href="#">
+                               <img class="img-responsive" src="img/villa.jpg">
+                               </a>
+                              </div>
+                              <h4><a href="dove/venezia/museo_1.html">Ville venete</a></h4>
+                              <p>Lorem ipsum vel vehicula est. In hac habitasse plate.</p>
+                          </div>
+                      </div>
+                    </div> <br><br>
+                    
+                    </div>
+                    </div>
+                          
+                  </div> <!--/cl-sm-12-->                    
+                </div>
+            </div> <!-- /prima riga -->
+            </div>
+             <!-- /container>
           
         <!-- Footer -->
             <footer class="my_footer">
