@@ -1,8 +1,11 @@
 
 @media print {
-    #tag-cloud, .my_footer {display: none;}
+    #tag-cloud, .my_footer, #myCarousel {display: none;}
     aside, footer {
         display: none;
+    }
+    .main-content{
+        width: 90%;
     }
     body{
         margin-top: 0px;
