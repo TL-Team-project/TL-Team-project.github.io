@@ -90,3 +90,8 @@ div.bandiera img{
 .navbar{
     color:#888;
 }
+
+article ul ul{
+    font-size: 12px;
+    padding-left: 20px;
+}
