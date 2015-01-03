@@ -1,9 +1,10 @@
-aside, footer {
-    display: none;
-}
-body{
-    margin-top: 0px;
-}
+
 @media print {
-	#tag-cloud, .my_footer {display: none;}
+    #tag-cloud, .my_footer {display: none;}
+    aside, footer {
+        display: none;
+    }
+    body{
+        margin-top: 0px;
+    }
 }
