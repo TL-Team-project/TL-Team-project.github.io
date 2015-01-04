@@ -4,7 +4,7 @@
 }
 @media (max-width: 1000px) {
     .breadcrumb {margin-top: 50px;}
-    .carousel {margin-top: 150px;}
+    .carousel {margin-top: 100px;}
 }
 @media (max-width: 992px) {  
     .carousel-inner p {font-size: 14px; }
@@ -26,16 +26,19 @@
     .featurette {margin-top: -40px;}
 }
 @media (max-width: 420px) {
-    .breadcrumb {margin-top: 50px;}
+    .breadcrumb {margin-top: 0px;}
     .carousel {margin-top: 50px; margin-bottom: -15px;}
 }   
 @media (max-width: 384px) {
-    .breadcrumb {}
+    .breadcrumb {margin-top: 50px;}
     .carousel {margin-top: 100px; margin-bottom: -15px;}
     
 }
 @media (max-width: 320px) {
     .carousel {display: none;}
     #my_homepage {margin-top: 80px;}
+}
+@media (max-width: 270px) {
+    .breadcrumb {margin-top: 100px;}
 }
 
