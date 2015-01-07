@@ -11,14 +11,15 @@
         <base href="../">
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script>
-        $(function() {
+            $(function () {
                 $("body").prepend('<nav id="NavBar">');
                 $("#NavBar").load('navbar.html');
-        });
+            });
         </script>
         <!-- CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/stileSite.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -33,7 +34,7 @@
                 <li class="active">questa pagina</li>
             </ol>
         </div> <!-- ./breadcrumbs -->
-        
+
         <!-- Corpo della pagina -->
         <div class="container">
             <!-- Header della pagina -->
@@ -42,24 +43,24 @@
             </div>
         </div>
         <!-- Footer -->
-            <footer class="my_footer">
-                  <!-- Inseriamo una riga -->
-                <hr class="featurette-divider">        
-                   <div class="container">      
-                        <span> 
-                          <strong> Seguici su: </strong> <a href="#">
-                          <img class="img_social" src="glyphicons_free/glyphicons_social/png/social-31-facebook.png" alt="Facebook"></a>        
-                          <a href="#">  
-                          <img class="img_social" src="glyphicons_free/glyphicons_social/png/social-32-twitter.png" alt="Twitter"></a>                                   
-                       </span>
-                        <span class="pull-right"> 
-                            TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
-                            <a href="mailto:admin@domain.it"> Contattaci </a>
-                        </span>  
-                        <br><br>
-                   </div>         
-            </footer>
-        
+       <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
 
         <!-- Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

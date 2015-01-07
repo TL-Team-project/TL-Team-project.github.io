@@ -1,25 +1,26 @@
 <!doctype html>
 <html lang="it">
     <head>
-      <meta charset="utf-8">
+        <meta charset="utf-8">
         <!-- Viewport -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Titolo, descrizione, autore -->
         <title>Regione Veneto</title>
         <meta name="description" content="Informazioni sulla nostra regione Veneto">
         <meta name="author" content="Studenti del corso di Web Design">
-		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script>
-		$(function() {
-			$("body").prepend('<nav id="NavBar">');
-			$("#NavBar").load('navbar.html');
-		});
-		</script>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script>
+            $(function () {
+                $("body").prepend('<nav id="NavBar">');
+                $("#NavBar").load('navbar.html');
+            });
+        </script>
         <!-- CSS -->
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/stileSite.css" rel="stylesheet">
-      <link href="css/media_query.css" rel="stylesheet">
-      <link href="css/media_print.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/stileSite.css" rel="stylesheet">
+        <link href="css/media_query.css" rel="stylesheet">
+        <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -31,38 +32,38 @@
                 <li class="active">pagina_1</li>
             </ol>
         </div> <!-- ./breadcrumbs -->
-        
-       <!-- Corpo della pagina -->
+
+        <!-- Corpo della pagina -->
         <div class="container">
             <!-- Header della pagina -->
             <div class="page-header">
                 <h1>
-                  Titolo pagina
+                    Titolo pagina
                 </h1>
             </div>
-            
+
         </div> <!-- /container>
           
         <!-- Footer -->
-            <footer class="my_footer">
-                  <!-- Inseriamo una riga -->
-                <hr class="featurette-divider">        
-                   <div class="container">      
-                        <span> 
-                          <strong> Seguici su: </strong> <a href="#">
-                          <img class="img_social" src="glyphicons_free/glyphicons_social/png/social-31-facebook.png" alt="Facebook"></a>        
-                          <a href="#">  
-                          <img class="img_social" src="glyphicons_free/glyphicons_social/png/social-32-twitter.png" alt="Twitter"></a>                                   
-                       </span>
-                        <span class="pull-right"> 
-                            TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
-                            <a href="mailto:admin@domain.it"> Contattaci </a>
-                        </span>  
-                        <br><br>
-                   </div>             
-            </footer>
-        
-          <!-- Script -->
+       <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../../js/bootstrap.js"></script>
         <!-- css3-mediaqueries.js for IE less than 9 -->

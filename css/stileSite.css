@@ -22,8 +22,13 @@ body{
     max-height: 30px; max-width: 30px;
 }
 .my_footer {
-    background-color: #D6C59A;
+    background-color: #000033;
+    color: #ffffff;
 }
+footer a{
+    color:#46b8da;
+}
+
 .container_img {
     max-width: 50%; max-height: 50%;
     float: right;
@@ -95,4 +100,12 @@ article ul ul{
 .img_social {
     margin-left: 3px;
     margin-right: 3px;
+}
+
+footer .fa-facebook span, footer .fa-twitter span{
+    display: none;
+}
+
+footer .fa-facebook , footer .fa-twitter {
+    font-size: 2em;
 }

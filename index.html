@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="it">
     <head>
+        <base href=".">
+        <!--[if IE]>
+            <script type="text/javascript">
+            // Fix for IE ignoring relative base tags.
+            // See http://stackoverflow.com/questions/3926197/html-base-tag-and-local-folder-path-with-internet-explorer
+            (function() {
+                var baseTag = document.getElementsByTagName('base')[0];
+                baseTag.href = baseTag.href;
+            })();
+            </script>
+        <![endif]-->  
         <meta charset="utf-8">
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +21,9 @@
         <title>Regione Veneto</title>
         <meta name="description" content="Informazioni sulla nostra regione Veneto">
         <meta name="author" content="Studenti del corso di Web Design">
-        <base href=".">
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script>
-        $(function() {
+            $(function () {
                 $("body").prepend('<nav id="NavBar">');
                 $("#NavBar").load('navbar.html');
             });
@@ -23,6 +33,8 @@
         <link href="css/stileSite.css" rel="stylesheet">
         <link href="css/media_query.css" rel="stylesheet">
         <link href="css/media_print.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     </head>
 
     <body>
@@ -135,9 +147,7 @@
         <div class="container" id="my_homepage">
             <!-- Header della pagina -->
             <div class="page-header">
-                <h1>
-                    Benvenuti in Veneto, mille motivi per visitarla
-                </h1>
+                <h1>Benvenuti nella regione Veneto, mille motivi per visitarla</h1>
             </div>
             <!-- Inseriamo una riga -->
             <div class="row">
@@ -162,9 +172,9 @@
                     </div>
                     <hr class="featurette-divider">
                     <div class="row">
-                        <h2><p>Ultime notizie</p></h2>
+                        <h2>Ultime notizie</h2>
                         <div class="col-sm-4">
-                            <div class="panel panel-info">
+                            <div class="panel panel-primary">
                                 <!-- Inseriamo il titolo del panello -->
                                 <div class="panel-heading"> 
                                     <h3 class="panel-title">Notizia 1</h3>
@@ -177,7 +187,7 @@
                         </div>  
 
                         <div class="col-sm-4">
-                            <div class="panel panel-info">
+                            <div class="panel panel-primary">
                                 <!-- Inseriamo il titolo del panello -->
                                 <div class="panel-heading"> 
                                     <h3 class="panel-title">Notizia 2</h3>
@@ -190,7 +200,7 @@
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="panel panel-info">
+                            <div class="panel panel-primary">
                                 <!-- Inseriamo il titolo del panello -->
                                 <div class="panel-heading"> 
                                     <h3 class="panel-title">Notizia 3</h3>
@@ -208,62 +218,92 @@
                 <aside class="col-sm-4">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="panel panel-default">
-                            <h3> <p class="text-center"> Eventi del momento </p></h3>
-                            <p> <a href="#">Evento_1</a> giorno/mese/anno</p> 
-                            <p><a href="#">Evento_2</a> giorno/mese/anno<p/>
-                            <p><a href="#">Evento_3</a> giorno/mese/anno</p>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-info">Eventi del momento</li>
+                                <li class="list-group-item">
+                                    <span class="label label-info pull-right">06/03/2014</span>
+                                    <h5 class="list-group-item-heading"><strong>Festa del radicchio a Scorzè </strong></h5>
+                                    <h6 class="list-group-item-text">
+                                        <span>
+                                            Lorem ipsum dolor sit amet,  ...
+                                        </span>
+                                        <a class="pull-right" href="#">dettagli..</a>
+                                    </h6> 
+                                    
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="label label-info pull-right">06/03/2014</span>
+                                    <h5 class="list-group-item-heading"><strong>Sagra dell'asparago a Borbiago</strong></h5>
+                                    <h6 class="list-group-item-text">
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sed do eiusmod tempor incididunt ut labore et dolore magna ...
+                                        </span>
+                                        <a class="pull-right" href="#">dettagli..</a>
+                                    </h6> 
+                                    
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="label label-info pull-right">06/03/2014</span>
+                                    <h5 class="list-group-item-heading "><strong>Il Caravaggio a Venezia</strong></h5>
+                                    <h6 class="list-group-item-text">
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna ...
+                                        </span>
+                                        <a class="pull-right" href="#">dettagli..</a>
+                                    </h6> 
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>          
+                    <div class="row" id="tag-cloud">
+                        <div class="col-sm-12">
+                            <div class="panel panel-primary panel-cloud">
+                                <!-- Inseriamo il titolo del panello -->
+                                <div class="panel-heading"> 
+                                    <h3 class="panel-title">Tag cloud</h3>
+                                </div>
+                                <!-- Inseriamo il body del panello-->
+                                <div class="panel-body">
+                                    <h1><a href="ricerca_tag.html"> venezia </a></h1>
+                                    <h3><a href="ricerca_tag.html"> musei </a></h3>
+                                    <h2><a href="ricerca_tag.html"> opere d'arte </a> </h2>
+                                    <h2><a href="ricerca_tag.html"> verona </a></h2> 
+                                    <h1><a href="ricerca_tag.html"> padova </a></h1> 
+                                    <h3><a href="ricerca_tag.html"> treviso </a></h3>
+                                    <h5><a href="ricerca_tag.html"> belluno </a></h5>
+                                </div>
+
                             </div>
-                       </div>          
-                   </div>
-                   <div class="row" id="tag-cloud">
-                       <div class="col-sm-12">
-                           <div class="panel panel-primary panel-cloud">
-                            <!-- Inseriamo il titolo del panello -->
-                             <div class="panel-heading"> 
-                               <h3 class="panel-title">Tag cloud</h3>
-                             </div>
-                             <!-- Inseriamo il body del panello-->
-                               <div class="panel-body">
-                               <h1><a href="ricerca_tag.html"> venezia </a></h1>
-                               <h3><a href="ricerca_tag.html"> musei </a></h3>
-                               <h2><a href="ricerca_tag.html"> opere d'arte </a> </h2>
-                               <h2><a href="ricerca_tag.html"> verona </a></h2> 
-                               <h1><a href="ricerca_tag.html"> padova </a></h1> 
-                               <h3><a href="ricerca_tag.html"> treviso </a></h3>
-                               <h5><a href="ricerca_tag.html"> belluno </a></h5>
-                              </div>
-                               
-                         </div>
-                       </div>
-                   </div>                   
-                    
-              </aside> <!-- /col-sm-4-->
-                
-              </div>
-            </div> <!-- /container>
+                        </div>
+                    </div>                   
+
+                </aside> <!-- /col-sm-4-->
+
+            </div>
+        </div> <!-- /container>
         
-    
+        
         <!-- Footer -->
-           <footer class="my_footer">
-                    <!-- Inseriamo una riga -->
-                <hr class="featurette-divider">        
-                   <div class="container">      
-                        <span> 
-                          <strong> Seguici su: </strong> <a href="#">
-                          <img class="img_social" src="glyphicons_free/glyphicons_social/png/social-31-facebook.png" alt="Facebook"></a>        
-                          <a href="#">  
-                          <img class="img_social" src="glyphicons_free/glyphicons_social/png/social-32-twitter.png" alt="Twitter"></a>                                   
-                       </span>
-                        <span class="pull-right"> 
-                            TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
-                            <a href="mailto:admin@domain.it"> Contattaci </a>
-                        </span>  
-                        <br><br>
-                   </div>         
-            </footer>
-        
-          <!-- Script -->
+        <footer class="my_footer">
+            <!-- Inseriamo una riga -->
+            <hr class="featurette-divider">        
+            <div class="container">      
+                <span> 
+                    <strong> Seguici su: </strong> 
+                    <a href="http://www.facebook.com"><span class="fa fa-facebook"><span>facebook</span></span></a>
+                    <a href="http://www.twitter.com"><span class="fa fa-twitter"><span>twitter</span></span></a>
+                </span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="pull-right"> 
+                    TL-team 2014 - <a href="sitemap.html"> Indice dei contenuti </a>
+                    <a href="mailto:admin@domain.it"> Contattaci </a>
+                </span>  
+            </div>
+            <br>
+        </footer>
+
+        <!-- Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <!-- css3-mediaqueries.js for IE less than 9 -->
