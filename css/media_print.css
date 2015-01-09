@@ -1,11 +1,14 @@
 @media print {
-    #tag-cloud, .my_footer, #myCarousel, .pagination, aside, footer, .comments {
+    #tag-cloud, .my_footer, #myCarousel, .pagination, aside, footer, .comments{
         display: none;
     }
+
     .main-content{
         width: 100%;
     }
     body{
         margin-top: 0px;
     }
+    
+    a[href]:after {content: none;}
 }
