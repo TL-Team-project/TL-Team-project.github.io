@@ -24,6 +24,7 @@
     .carousel-inner p {display: none;}
     .carousel-inner h1 {font-size: 12px;}
     .featurette {margin-top: -40px;}
+    .comments span {font-size: 14px;}
 }
 @media (max-width: 420px) {
     .breadcrumb {margin-top: 0px;}
