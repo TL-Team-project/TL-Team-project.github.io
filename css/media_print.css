@@ -1,5 +1,5 @@
 @media print {
-    #tag-cloud, .my_footer, #myCarousel, .pagination, aside, footer, .comments{
+    .my_footer, #myCarousel, .pagination, aside, footer, .comments{
         display: none;
     }
 

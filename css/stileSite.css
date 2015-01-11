@@ -15,7 +15,7 @@ body{
     text-align: center;
 } 
 
-.panel-cloud h1, .panel-cloud h2, .panel-cloud h3,.panel-cloud h4,.panel-cloud h5 {
+.panel-cloud h1, .panel-cloud h2, .panel-cloud h3, .panel-cloud h4, panel-cloud h5 {
     display: inline;
 }
 .img_lingua {
