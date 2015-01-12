@@ -39,7 +39,7 @@
     .carousel {display: none;}
     #my_homepage {margin-top: 80px;}
 }
-@media (max-width: 256px) {
+@media (max-width: 270px) {
     .breadcrumb {margin-top: 100px;}
 }
 
